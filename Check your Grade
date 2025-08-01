@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+    float subject_1, subject_2, subject_3, subject_4, subject_5;
+    float total, percentage;
+
+    printf("Enter the marks for 5 subjects: ");
+
+    int count = scanf("%f %f %f %f %f", &subject_1, &subject_2, &subject_3, &subject_4, &subject_5);
+    if (count != 5) {
+        printf("Error: Please enter valid numbers for all 5 subjects.\n");
+        return 1;
+    }
+
+    total = subject_1 + subject_2 + subject_3 + subject_4 + subject_5;
+    percentage = (total / 500.0) * 100;
+
+
+    printf("Total = %.2f\n", total);
+    printf("Percentage = %.2f%%\n", percentage);
+
+    if (percentage >= 90)
+    {
+        printf("Grade A\n");
+    }
+    else if (percentage >= 80)
+    {
+        printf("Grade B\n");
+    }
+    else if (percentage >= 70)
+    {
+        printf("Grade C\n");
+    }
+    else if (percentage >= 60)
+    {
+        printf("Grade D\n");
+    }
+    else if (percentage >= 40)
+    {
+        printf("Grade E\n");
+    }
+    else
+    {
+        printf("Grade F\n");
+    }
+
+    return 0;
+}
