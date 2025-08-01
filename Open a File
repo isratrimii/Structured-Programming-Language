@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    FILE*fp;
+    fp=fopen("data.text","w");
+    //processing of the files
+    fprintf(fp, "%s", "Hello World");
+    //end of processing
+    fclose(fp);
+    return 0;
+}
