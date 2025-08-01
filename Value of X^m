@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+#define PI 3.1416
+int main()
+{
+
+    float x,a,m;
+    printf("Enter the value of x=\n");
+    scanf("%f",&x);
+    printf("Enter the value of m=\n");
+    scanf("%f",&m);
+
+    a= PI * pow(x,m);
+    printf("%f",a);
+
+    return 0;
+}
